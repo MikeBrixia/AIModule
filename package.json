@@ -6,15 +6,16 @@
   "displayName": "AI Module",
   "unity": "2021.1",
   "source": "AIModule",
-  "author": 
-  {
+  "author": {
     "name": "Michael Guida",
     "email": "michael.guida@outlook.com"
   },
-  "dependencies": 
-  {
-     "com.ai.behavior-tree": "0.0.1",
-     "com.core.core-library": "0.0.1"
+  "dependencies": {
+    "com.ai.behavior-tree": "0.0.1",
+    "com.core.core-library": "0.0.1",
+    "com.unity.mathematics": "1.2.1",
+    "com.unity.burst": "1.6.6",
+    "com.unity.collections": "1.4.0"
   },
   "type": "library"
 }

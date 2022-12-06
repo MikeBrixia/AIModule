@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using AIModule.AI_Pathfinding;
+using Core;
 
-namespace Core.AI
+namespace AIModule
 {
     [RequireComponent(typeof(Pathfinding), typeof(MovementComponent2D))]
     public class AIController : MonoBehaviour

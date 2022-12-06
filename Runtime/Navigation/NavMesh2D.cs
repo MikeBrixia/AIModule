@@ -8,8 +8,9 @@ using UnityEditor;
 using System.Linq;
 using ComputationGeometry_DOTS;
 using UnityEngine.SceneManagement;
+using Core;
 
-namespace Core
+namespace AIModule.Navigation
 {
     [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer), typeof(BoxCollider2D))]
     [RequireComponent(typeof(PolygonCollider2D))]
@@ -43,15 +44,10 @@ namespace Core
             meshRenderer = GetComponent<MeshRenderer>();
             meshFilter = GetComponent<MeshFilter>();
             volume = GetComponent<BoxCollider2D>();
-
-            //grid = new CustomGrid(navData.size.x, navData.size.y, cellSize, volume.bounds.min);
         }
 
         void Update()
         {
-            //CreateGrid();
-            volume = GetComponent<BoxCollider2D>();
-
 #if UNITY_EDITOR
             if (realtimeCook)
                 BakeNavigationMesh();
@@ -60,9 +56,13 @@ namespace Core
 
         void OnValidate()
         {
+            // Initialize GameObject data.
             volume = GetComponent<BoxCollider2D>();
+            volume.isTrigger = true;
             navCollider = GetComponent<PolygonCollider2D>();
-            
+            navCollider.isTrigger = true;
+            filter.useLayerMask = true;
+
             // Cache the current scene name
             string sceneName = SceneManager.GetActiveScene().name;
             

@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
 using Unity.Mathematics;
+using Core;
 
-namespace Core
+namespace AIModule.AI_Pathfinding
 {
 
     ///<summary>

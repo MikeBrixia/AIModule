@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using BT.Runtime;
 
-namespace Core.AI
+namespace AIModule.BTExtension
 {
     public class MoveTo : BT_ActionNode
     {

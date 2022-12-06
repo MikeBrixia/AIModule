@@ -6,8 +6,9 @@ using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
 using Unity.Mathematics;
 using UnityEngine;
+using Core;
 
-namespace Core
+namespace AIModule.Navigation
 {
     public class NavMeshData : ScriptableObject
     {

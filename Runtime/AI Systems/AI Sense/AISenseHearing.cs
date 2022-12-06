@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Core.AI
+namespace AIModule.Sensing
 {
     [CreateAssetMenu(fileName ="AI Sense Hearing", menuName = "AI/Sensing/AI Sense Hearing")]
     public class AISenseHearing : AISense

@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Core;
 
-namespace Core.AI
+namespace AIModule.Sensing
 {
     [CreateAssetMenu(fileName = "AI Sense Sight", menuName = "AI/Sensing/AI Sense Sight")]
     public sealed class AISenseSight : AISense

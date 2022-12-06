@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using System;
 
-namespace Core.AI
+namespace AIModule.Sensing
 {
     public class AISensingComponent : MonoBehaviour
     {

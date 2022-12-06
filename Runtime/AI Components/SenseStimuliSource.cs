@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Core.AI
+namespace AIModule.Sensing
 {
     ///<summary>
     /// Component used to handle stimuli events and notify AI Sensing Components.

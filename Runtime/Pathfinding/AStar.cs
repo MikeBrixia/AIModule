@@ -1,15 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+
 using ComputationGeometry_DOTS;
 using Unity.Burst;
 using Unity.Collections;
-using Unity.Collections.LowLevel.Unsafe;
 using Unity.Jobs;
 using Unity.Mathematics;
-using UnityEngine;
+using Core;
 
-namespace Core
+namespace AIModule.AI_Pathfinding
 {
     ///<summary>
     /// A* Pathfinding algorithm.
