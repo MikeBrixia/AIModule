@@ -1,0 +1,20 @@
+{
+  "name": "com.ai.ai-module",
+  "display name": "AI Module",
+  "version": "0.0.1",
+  "description": "AI Extension for the Core Library",
+  "displayName": "AI Module",
+  "unity": "2021.1",
+  "source": "AIModule",
+  "author": 
+  {
+    "name": "Michael Guida",
+    "email": "michael.guida@outlook.com"
+  },
+  "dependencies": 
+  {
+     "com.ai.behavior-tree": "0.0.1",
+     "com.core.core-library": "0.0.1"
+  },
+  "type": "library"
+}
